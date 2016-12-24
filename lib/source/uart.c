@@ -2,10 +2,14 @@
 #include <util/delay.h>
 
 // Рабочая частота контроллера
-#define F_CPU 1000000
+#ifndef	F_CPU
+ #define F_CPU 1000000UL
+#endif
 
 // Скорость обмена данными
-#define BAUD 9600L
+#ifndef BAUD
+ #define BAUD 9600L
+#endif
 
 //Согластно заданной скорости подсчитываем значение для регистра UBRR
 #define UBRRL_value (F_CPU/(BAUD*16))-1

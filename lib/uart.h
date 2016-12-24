@@ -1,10 +1,9 @@
-// AVR Atmega8 UART Lib
-
 #ifndef	_UART_H
-#define _UART_H
+#define _UART_H  1
+#endif
+
 #include <avr/io.h>
 #include <util/delay.h>
-#endif
 
 void uart_init();
 
