@@ -1,4 +1,4 @@
-# My ATmega8 libs
+# ATmega8 libs
 
 ## UART
 
